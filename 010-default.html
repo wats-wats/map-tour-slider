@@ -65,7 +65,7 @@
     .swiper-pagination-bullet-active {
       opacity: 1;
     }
-    }
+    
   </style>
 </head>
 <body>
@@ -86,10 +86,10 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
-      loop: true,
+      loop: true
       autoplay: {
         delay: 5000,
-        disableOnInteraction: false
+        disableOnInteraction: true
       },
       pagination: {
         el: '.swiper-pagination',
@@ -98,7 +98,6 @@
           return '<span class="' + className + '">' + '</span>';
         },
       },
-    });
-  </script>
+    }); </script>
 </body>
 </html>
