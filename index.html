@@ -47,23 +47,21 @@
       -webkit-align-items: center;
       align-items: center;
     }
-
     .swiper-pagination-bullet {
       width: 20px;
       height: 20px;
       text-align: center;
       line-height: 20px;
       font-size: 12px;
-      background:#CC6633;
+      background: #CC6633;
       opacity: 0.5;
       margin: 0px 6px !important;
       transition: width 0.2s, height 0.2s, opacity 0.2s;
     }
     .swiper-pagination-bullet-active {
       opacity: 1;
-      color:#FFFF00;
-      background:#007aff;
-    }
+      color: #FFFF00;
+      background: #007aff;
     }
   </style>
 </head>
@@ -77,6 +75,7 @@
       <div class="swiper-slide" style="background-image: url('img/slider1-dragon76-image4.jpg')"></div>
     </div>
     <div class="swiper-pagination"></div>
+    <div class="swiper-scrollbar"></div>
   </div>
 
   <!-- Swiper JS -->
@@ -86,6 +85,7 @@
   <script>
     var swiper = new Swiper('.swiper-container', {
       loop: true,
+      autoHeight: true,
       autoplay: {
         delay: 5000,
         disableOnInteraction: false
